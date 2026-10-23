@@ -20,7 +20,7 @@ class LocationService {
     }
     if (permission == LocationPermission.deniedForever) {
       throw Exception(
-          'Location permission permanently deny hai. App settings se allow karein.');
+          'Location permission permanently denied.Please enable it from settings.');
     }
 
     return Geolocator.getCurrentPosition(
